@@ -8,7 +8,151 @@ html, body{
     height: 100%;
 }
 
-h1{
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url(back-img.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    padding: 1% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo > img{
+    width: 50px;
+    border-radius: 50%;
+}
+.content{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: white;
+}
+.content > h2{
+    font-size: 20px;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0;
+}
+
+.text > h1{
     font-size: 50px;
-    color: red;
+    color: white;
+    padding: 1% 0;
+}
+.text > p{
+    color: white;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: white;
+    
+}
+
+.box1{
+    padding: 15px 40px;
+   background-color: #9d7e3c;
+   box-shadow: 1px 1px 4px white;
+}
+
+.box1 > h2{
+    font-weight: 30px;
+    padding: 1px 0;
+}
+.box1 > h4{
+    font-size: 20px;
+
+}
+.btn{
+   margin: 5% 0;
+   padding: 10px 20px;
+   font-size: 20px;
+    font-weight: 700;
+    background-color: #9d7e3c;
+    color: white;
+    border-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: transparent;
+    border: none;
+    transition: 1s;
+}
+footer{
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1% 2%;
+    background-color: #2b2d31;
+}
+.footer1 > h3{
+    font-weight: 500;
+}
+.footer1 > h3 > span{
+    color: #e0b350;
+}
+
+/* ===================responsive========= */
+@media (max-width: 600px) {
+    
+    .content {
+    display: none;
+    }
+    main{
+        width: 100vw;
+        height: 130vh;
+    }
+    .text > h1 {
+        font-size: 30px;
+    }
+    .text > p{
+        font-size: 15px;
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .box1>h2{
+        font-size: 20px;
+    }
+    .box1> h4{
+        font-size: 20px;
+    }
+    .btn {
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
 }
